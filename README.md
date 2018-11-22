@@ -1,6 +1,62 @@
+# js-datavisualisation-challenge - d3.js
+### Un mot sur mon travail
+Beaucoup de manipulation et de "test" donc finalement pas beaucoup d'abouti pour ce 21/11/2018.
+
+Mais beaucoup de choses acquises, je ne m'étais jamais intéressée aux graphiques ni à la possibilité d'en faire.
+
+J'essaye un maximum de m'exercer et d'apprendre des techniques qui peuvent m'être demander lors d'un job et ce challenge était typiquement ça.
+
+De plus, D3.js offre des facilités d'usages. Même si j'avoue être dans une période vanilla-js et tout vouloir créer et maitriser de la base.
+
+### Avenir prochain
+Le finire et l'intégrer dans une page du même genre. Pour avoir un projet fini à présenter avec plusieurs sortes de graphique "clasic" Bar, Circle, Pie, Donut, Line.
+
+Dans l'idée je voulais au clic sur un Nom dans tableau afficher le graphique et faire la comparaison entre les différents éléments du tableau cliquer.
+
+Avec un bouton RESET ou la possibilité de les retirer du graphique.
+
+### 1. Manipulation du **DOM** : 
+
+- [X] J'ai pu trouver le bon sélecteur pour y arriver.  
+- [X] J'ai pu injecter le graphique au bon endroit de la page via javascript.
+- [X] J'ai pu récupérer les données html dans un format adapté à mon code javascript.
+
+### 2. Requête **ajax** :
+- [X] J'ai pu recevoir la réponse du serveur distant en json.
+- [X] ensuite, j'ai pu construire une fonction de callback traitant ces données.
+
+### 3. Utilisation de **librairies tierces** : 
+- [X] J'ai pu intégrer la librairie tierce dans mon application.
+- [X] J'ai utilisé la documentation fournie par la librairie.
+- [ ] J'ai pu générer les 2 graphiques "inline data".
+- [X] J'ai pu générer le graphique "remote data".
+
+### 4. Problem-solving : 
+
+- [X] Rigueur syntaxique : j'ai pu traduire les processus que j'ai imaginé en syntaxe javascript.
+- [X] Pensée logique : à force d'itérations et d' essais & erreurs, j'ai pu trouver un chemin logique qui fonctionne pour répondre aux problèmes soulevés par la demande du client. Spécifiquement : 
+	- [ ] J'ai pu générer les 2 graphiques "inline data".
+	- [X] J'ai pu générer le graphique "remote data".
+	- [X] J'ai pu construire une fonction de callback traitant les données remote (reçues via ajax).
+	- [ ] J'ai pu faire en sorte que le graphique realtime se rafraichisse en temps réel.
+	- [ ] J'ai pu afficher les données détaillées au survol de la souris.
+
+  
+### 5. Débogage :
+  
+  - [X] J'utilise la console pour comprendre ce qui se passe et confronter ce que je tente de programmer à ce que la machine exécute.
+  
+### 6. Séparation des préoccupations :
+
+ - [ ] Si je désactive le javascript, l'expérience-utilisateur est satisfaisante, l'utilisateur a accès aux données et au contenu
+ - [ ] Si j'active le javascript, les tableaux sont agrémentés d'un graphique interactif.
+
+ 
+ ## Good luck ! 
+
+# INSTRUCTION
 # js-datavisualisation-challenge
 Challenge Javascript
-
 # Instruction
 Repository : `js-datavisualisation-challenge`   
 Mode : `solo`   
@@ -32,6 +88,8 @@ Et c'est ce que tu vas faire, en ajoutant des **graphiques interactifs** grâce 
 Dans ce fichier html, tu trouveras deux tableaux de données. Grâce au javascript, parcoure le DOM pour insérer juste au dessus de chacun de ces tableaux une représentation de ses données sous forme de graphique interactif.
 
 Si le javascript est désactivé, le graphique n'apparait pas. Si le javascript est activé, le graphique apparait entre le titre et le tableau.
+
+
 
 ### 2. Remote data, in real-time, via ajax
 Des données se trouvent à cet URL : [https://inside.becode.org/api/v1/data/random.json](https://inside.becode.org/api/v1/data/random.json)  
@@ -74,42 +132,3 @@ Vous pouvez vous entraider à ces deux conditions :
 Le mode d'évaluation choisi est une **auto-évaluation** sur base des indicateurs suivants :  
 
 (Ce qui suit est un aperçu, [utilise le formulaire de remise fourni](https://goo.gl/forms/fuKofp7Mh5PAe7bP2) pour t'auto-évaluer. Un coach réalisera la même évaluation.)
-
-### 1. Manipulation du **DOM** : 
-
-- [ ] J'ai pu trouver le bon sélecteur pour y arriver.  
-- [ ] J'ai pu injecter le graphique au bon endroit de la page via javascript.
-- [ ] J'ai pu récupérer les données html dans un format adapté à mon code javascript.
-
-### 2. Requête **ajax** :
-- [ ] J'ai pu recevoir la réponse du serveur distant en json.
-- [ ] ensuite, j'ai pu construire une fonction de callback traitant ces données.
-
-### 3. Utilisation de **librairies tierces** : 
-- [ ] J'ai pu intégrer la librairie tierce dans mon application.
-- [ ] J'ai utilisé la documentation fournie par la librairie.
-- [ ] J'ai pu générer les 2 graphiques "inline data".
-- [ ] J'ai pu générer le graphique "remote data".
-
-### 4. Problem-solving : 
-
-- [ ] Rigueur syntaxique : j'ai pu traduire les processus que j'ai imaginé en syntaxe javascript.
-- [ ] Pensée logique : à force d'itérations et d' essais & erreurs, j'ai pu trouver un chemin logique qui fonctionne pour répondre aux problèmes soulevés par la demande du client. Spécifiquement : 
-	- [ ] J'ai pu générer les 2 graphiques "inline data".
-	- [ ] J'ai pu générer le graphique "remote data".
-	- [ ] J'ai pu construire une fonction de callback traitant les données remote (reçues via ajax).
-	- [ ] J'ai pu faire en sorte que le graphique realtime se rafraichisse en temps réel.
-	- [ ] J'ai pu afficher les données détaillées au survol de la souris.
-
-  
-### 5. Débogage :
-  
-  - [ ] J'utilise la console pour comprendre ce qui se passe et confronter ce que je tente de programmer à ce que la machine exécute.
-  
-### 6. Séparation des préoccupations :
-
- - [ ] Si je désactive le javascript, l'expérience-utilisateur est satisfaisante, l'utilisateur a accès aux données et au contenu
- - [ ] Si j'active le javascript, les tableaux sont agrémentés d'un graphique interactif.
-
- 
- ## Good luck ! 
