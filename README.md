@@ -1,4 +1,5 @@
 # js-datavisualisation-challenge - d3.js
+> OUPS dans l'état actuel le graphique du centre affiche deux pays modifiables dans le becode.js, et le Ajax est en bas. Je vais changer ça vite vite.
 ### Un mot sur mon travail
 Beaucoup de manipulation et de "test" donc finalement pas beaucoup d'abouti pour ce 21/11/2018.
 
