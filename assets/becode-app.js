@@ -67,7 +67,7 @@ function createObject(nombre = tabNumRow) {
 }
 // fabrique le graphique en fonction du numéro du pays
 function clicker(nombre) {
-	d3.select("svg")
+	d3.select("#bodyContent").select("svg")
 		.remove()
 	makeDraw()// crée le SVG
 	drawChart(makeTab(nombre))// crée le contenue du graphique
