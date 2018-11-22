@@ -21,7 +21,7 @@ let tabCell = d3.selectAll("#table1>tbody").selectAll("tr")._groups[0][0].cells
 
 
 /* **************************** */
-// création de l'object pour le tab1
+// création de l'object pour le table1
 function graphiqueTab1(name, date, price) {
 	this.name = name,
 		this.values = [{ date: date, price: price }]
@@ -67,9 +67,8 @@ function createObject(nombre = tabNumRow) {
 }
 // fabrique le graphique en fonction du numéro du pays
 function clicker(nombre) {
-	d3.select("#bodyContent").select("svg")
+	d3.select("#bodyContent").select("svg").selectAll("g")
 		.remove()
-	makeDraw()// crée le SVG
 	drawChart(makeTab(nombre))// crée le contenue du graphique
 }
 
@@ -94,13 +93,13 @@ function ajax() {
 
 // graphique pour le tableau AJAX 
 function tabAjax(dataset) {
-	// var dataset = [4,2,-6,13,4,8,-23,19,10,-12,2,15];
 	var maxHeight = d3.max(dataset, function (d) { return d });
 	var w = 500;
 	var h = maxHeight * 10 * 2 + 100;
+	d3.select("#firstHeading").select("svg")
+		.remove()
 	var svg = d3.select("#firstHeading").append("svg")
 		.attr("width", w).attr("height", h).attr("style", "margin-left: 50px; font-size: 0.5em")
-
 	var barpadding = 2;
 	var bars = svg.selectAll("rect").data(dataset).enter().append("rect");
 	bars.attr("x", function (d, i) {
@@ -313,7 +312,7 @@ function drawChart(data) {
 	svg.append("g")
 		.attr("class", "x axis")
 		.attr("transform", `translate(0, ${height - margin})`)
-		.call(xAxis);
+		.call(xAxis)
 
 	svg.append("g")
 		.attr("class", "y axis")
@@ -322,7 +321,7 @@ function drawChart(data) {
 		.attr("y", 15)
 		.attr("transform", "rotate(-90)")
 		.attr("fill", "#000")
-		.text("Total values");
+		.text("Nombre de crime");
 }
 
 /* Tab1 **************************** */
@@ -377,4 +376,8 @@ d3.select(".container").select("#table1")
 
 createObject(4)// creation du tableau avec les valeur du tab1, en argument soit le nombre de pays afficher sinon rien tout les pays
 
-ajax()// tableau ajax méthod FETCH avec l'appel de la fonction taAjax
+ajax()
+let interval = () => {
+	setInterval(ajax, 1000)
+}
+interval()

@@ -9,11 +9,11 @@ J'essaye un maximum de m'exercer et d'apprendre des techniques qui peuvent m'êt
 De plus, D3.js offre des facilités d'usages. Même si j'avoue être dans une période vanilla-js et tout vouloir créer et maitriser de la base.
 
 ### Avenir prochain
-Le finire et l'intégrer dans une page du même genre. Pour avoir un projet fini à présenter avec plusieurs sortes de graphique "clasic" Bar, Circle, Pie, Donut, Line.
+Le finir et l'intégrer dans une page du même genre. Pour avoir un projet fini à présenter avec plusieurs sortes de graphique "clasic" Bar, Circle, Pie, Donut, Line.
 
-Dans l'idée je voulais au clic sur un Nom dans tableau afficher le graphique et faire la comparaison entre les différents éléments du tableau cliquer.
+Ramenées toutes les valeurs en pourcentage pour la comparaison dans le tableau et au survol du rond afficher le nombre. Si un pays est sélectionné affichée un nouveau tableau HTML qui reprend toutes les valeurs ainsi avoir un tableau avec seulement les pays sélectionnés et n'affiché que les pays sélectionnés sur le graphique.
 
-Avec un bouton RESET ou la possibilité de les retirer du graphique.
+Un bouton tout sélectionnés, tout désactivés.
 
 ### 1. Manipulation du **DOM** : 
 
@@ -38,7 +38,7 @@ Avec un bouton RESET ou la possibilité de les retirer du graphique.
 	- [ ] J'ai pu générer les 2 graphiques "inline data".
 	- [X] J'ai pu générer le graphique "remote data".
 	- [X] J'ai pu construire une fonction de callback traitant les données remote (reçues via ajax).
-	- [ ] J'ai pu faire en sorte que le graphique realtime se rafraichisse en temps réel.
+	- [X] J'ai pu faire en sorte que le graphique realtime se rafraichisse en temps réel.
 	- [ ] J'ai pu afficher les données détaillées au survol de la souris.
 
   
